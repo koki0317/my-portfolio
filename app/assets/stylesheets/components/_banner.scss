@@ -1,0 +1,126 @@
+.banner {
+  // border: 1px solid magenta;
+  width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items:center;
+
+  .banner-wrapper {
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-text {
+      width: 100%;
+      padding: 0 3rem 0;
+
+      p {
+        width: 100%;
+        margin: 15px auto 0;
+        font-size: 1.4rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+      }
+
+    }
+
+    .btn-talk {
+      background-color: $purple;
+      color: white;
+      padding: 0.7rem 2.7rem;
+      margin: 15px auto 0;
+      border-radius: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      transition: all 0.5s ease;
+
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    .banner-wrapper {
+
+      .hero-text {
+        padding: 0 7rem 0;
+        h1 {
+          font-size: 5rem;
+        }
+
+        p {
+          font-size: 2.0rem;
+        }
+      }
+
+      .btn-talk {
+        padding: 1.3rem 5rem;
+        margin: 30px auto 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    .banner-wrapper {
+      padding: 8rem 0 2rem 0;
+      .hero-text {
+
+        h1 {
+          font-size: 7rem;
+        }
+
+        p {
+          font-size: 2.4rem;
+        }
+      }
+
+      .btn-talk {
+        padding: 1.6rem 6rem;
+        margin: 50px auto 0;
+        font-size: 1.8rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner {
+    .banner-wrapper {
+      padding: 9rem 0 2rem 0;
+      .hero-text {
+
+        h1 {
+          font-size: 7.5rem;
+        }
+
+        p {
+          font-size: 2.8rem;
+        }
+      }
+
+      .btn-talk {
+        padding: 2.4rem 8rem;
+        margin: 65px auto 0;
+        font-size: 2.2rem;
+      }
+    }
+
+  }
+}

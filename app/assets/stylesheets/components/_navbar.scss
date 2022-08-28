@@ -1,12 +1,81 @@
-.navbar-lewagon {
+.navbar {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  padding: 1rem 2.5rem 1rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  .logo {
+    width: 3rem;
+  }
+
+  .fa-solid.fa-bars {
+    font-size: 1.8rem;
+  }
+
+  .contact {
+    display: none;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+@media screen and (min-width: 768px) {
+  .navbar {
+
+    .logo {
+      width: 6rem;
+    }
+
+    .fa-solid.fa-bars {
+      display: none;
+    }
+
+    .contact {
+      display: block;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding: 1.8rem 3rem;
+      background-color: $yellow;
+      border-radius: 1rem;
+      transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+@media screen and (min-width: 1024px) {
+  .navbar {
+    .logo {
+      width: 6rem;
+    }
+
+    .fa-solid.fa-bars {
+      display: none;
+    }
+
+    .contact {
+      font-size: 2rem;
+      padding: 1.5rem 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    .logo {
+      width: 7rem;
+    }
+
+    .fa-solid.fa-bars {
+      display: none;
+    }
+
+    .contact {
+      font-size: 2.6rem;
+      padding: 1.8rem 4.6rem;
+    }
+  }
 }
